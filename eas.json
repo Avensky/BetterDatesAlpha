@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 5.4.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": { 
+        "buildType": "apk"
+      },
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./play-console-api.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appName": "Better Dates",
+        "appleId": "urielzacarias@gmail.com",
+        "ascAppId": "6444273571",
+        "appleTeamId": "QKF3X3UZKX"
+      }
+    }
+  }
+}
